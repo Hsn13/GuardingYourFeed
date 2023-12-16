@@ -1,0 +1,187 @@
+<html>
+<head>
+	<title>Risks & Countermeasures</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="header">
+	
+		<div id="webname">
+			<img src="images/logo.png">
+			<p>GuardingYourFeed</p>
+		</div>
+		
+		<div id="menu">
+			<table>
+			<tr>
+				<td><a href="Home.html">HOME</a></td>
+				<td>|</td>
+				<td><a href="SocialMedia.html">SOCIAL MEDIA</a></td>
+				<td>|</td>
+				<td><a href="Privacy.html">PRIVACY</a></td>
+				<td>|</td>
+				<td><a href="Risks.html">RISKS & COUNTERMEASURES</a></td>
+				<td>|</td>
+				<td><a href="MakingOf.html">MAKING OF GUARDINGYOURFEED</a></td>
+				<td>|</td>
+				<td><a href="OurStory.html">OUR STORY</a></td>
+			</tr>
+			</table>
+		</div>
+		
+	</div>
+	
+	<div id="content">
+		<div id="userName"></div>
+		<div id="textbackground">
+			<div id="textMain">
+					<!--the title before was "h1" so I changed it to "p" to resize the text-->
+					<p>The Risks of Using Social Media <br>and Their Countermeasures</p>
+					<hr>
+					<div id="topicRisks">
+					<p>Risks Social Media Users Might Face</p>
+					
+						<div id="textLayout">
+
+									<div id="textBox1">
+									<p>
+									<span>Phishing attacks/scams</span>
+									<br><br>
+This online scam preys on people by sending them an email that appears to be from a reputable organization. It requests personal identification data from the customer. Then, they take advantage of the data by accessing the customer's active accounts.
+									</p>
+									</div>
+
+									<div id="textBox2">
+									<p>
+									<span>Unethical Data Gathering</span>
+									<br><br>
+									It occurs when Companies store and exploit all their customer's private information to target better advertisement to them. 
+									Also, companies occasionally pass on consumers' personal data to unaffiliated parties without their knowledge or permission.
+									</p>
+									</div>
+
+									<div id="textBox3">
+									<p>
+									<span>Cyberbullying</span>
+									<br><br>
+									It is a form of bullying that occurs online. It happens by sharing hurtful and malicious content about someone else. It can also involve disclosing sensitive or private information about another individual in a way that causes embarrassment or humiliation.
+									</p>
+									</div>
+
+									<div id="textBox4">
+									<p>
+									<span>Automated Bot Attacks</span>
+									<br><br>
+									It occurs when "social media bot" accounts that constantly post and follow new users or "botnets" spread spam messages, steal data, and execute attacks of distributed denial-of-service (DDoS) that give hackers opportunity to access people's networks and gadgets.
+									</p>
+									</div>
+						</div>
+					</div>
+					
+			<div id="topicCountermeasures">
+					<div id="imgCountermeasures">
+						<img src="images/folderGirl.png">
+					</div>
+				
+				<div id="textbox">
+				<span>How to Countermeasure/Mitigate the Risks</span>
+				<br>
+				<ul>
+				<li> Make sure that only reliable sources can access private information by adjusting your privacy settings all the way up.</li>
+				<br>
+				<li> Be aware and up to date to the company's privacy policies on their website and all of their social media platforms.</li>
+				<br>
+				<li> When using or installing any applications, make sure to check the request permissions carefully.</li>
+				<br>
+				<li> When using social media, never share and disclose any of your private information than what is absolutely necessary i.e. your name, date of birth, your home address, your personal photos, where you live, and etc.</li>
+				<br>
+				<li>Never respond to emails or click links that you think are suspicious, and double check if the sender is legit or a scam by looking for grammar or spelling mistakes and if the domain name is correct or not.</li>
+				<br>
+				<li>Install an antivirus software/firewalls, to prevent malicious viruses and third-party users/ hackers to enter your computer.</li>
+				</ul>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+
+	</div>
+	
+	<div id="footer">
+		<table id="footerlink">
+			<tr>
+				<td>CONTACT INFO</td>
+				<td><a href="#"><img class="contact" src="images/phone.png" alt="Phone Symbol"></a></td>
+				<td><a href="#"><img class="contact" src="images/Picture8.png" alt="Email Symbol"></a></td>
+				<td><a href="#"><img class="contact" src="images/linkdin.png" alt="LinkIn Logo"></a></td>
+				<td><a href="#"><img class="contact" src="images/insta.png" alt="Instagram Logo"></a></td>
+				<td><a href="#"><img class="contact" src="images/twitter.png" alt="Twitter Logo"></a></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/JavaScript">function checkUser() {
+		var firstName = document.getElementById("firstinput").value;
+		var lastName = document.getElementById("lastinput").value;
+		var mobileNo = document.getElementById("mobno").value;
+		var email = document.getElementById("emailinput").value;
+	
+		if (firstName.length < 3) {
+			displayErrorMessage("First Name should have at least 3 characters!");
+		} else if (lastName.length < 3) {
+			displayErrorMessage("Last Name should have at least 3 characters!");
+		} else if (!/^\d{8}$/.test(mobileNo)) {
+			displayErrorMessage("Mobile No must contain exact 8 digits!");
+		} else if (email === "") {
+			displayErrorMessage("Please enter your E-Mail!");
+		} else {
+			// Save data to localStorage
+			localStorage.setItem("lFName", firstName);
+			localStorage.setItem("lLName", lastName);
+			localStorage.setItem("MobNum", mobileNo);
+			localStorage.setItem("lEmail", email);
+	
+			// Display success message
+			displaySuccessMessage("Information added successfully!");
+	
+			// Clear input fields
+			clearInputFields();
+		}
+	}
+	
+	function displayErrorMessage(message) {
+		alert("Error: " + message);
+	}
+	
+	function displaySuccessMessage(message) {
+		alert("Success: " + message);
+	}
+	
+	function clearInputFields() {
+		document.getElementById("firstinput").value = "";
+		document.getElementById("lastinput").value = "";
+		document.getElementById("mobno").value = "";
+		document.getElementById("emailinput").value = "";
+	}
+	
+	 // Function to display user's first name on all pages
+	 function displayUserName() {
+    var firstName = localStorage.getItem("lFName");
+    if (firstName) {
+      document.getElementById("userName").innerText = "Welcome, " + firstName + "!";
+    }
+  }
+
+  // Call displayUserName function on page load
+  displayUserName();
+
+  function clearInputFields() {
+    document.getElementById("firstinput").value = "";
+    document.getElementById("lastinput").value = "";
+    document.getElementById("mobno").value = "";
+    document.getElementById("emailinput").value = "";
+  }
+	</script>
+</body>
+</html>

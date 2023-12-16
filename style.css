@@ -1,0 +1,778 @@
+
+body{margin:0;
+	padding:0;
+	border:none;
+	font-family:calibri;
+	height: 100%;
+	
+	}
+	#userName{
+		font-size: 14px;
+		color: rgb(0, 0, 0);
+		font-weight: bold;
+		position: absolute;
+		margin-left: 90%;
+		margin-top: 0.5%;
+	}
+
+/*CSS STYLING FOR HEADER*/
+#header{width:100%;
+	   height:7%;
+	   background-color:#102a3cff;
+	   color:white;
+	   font-size:1em}
+
+   /**CSS STYLING FOR LOGO**/	
+   #webname{float:left;
+		   padding:0.6%;
+		   width:10%}
+		   #webname img{height:70%;
+					   width:22%; 
+					   float:left;
+					   margin-right:6%;
+					   border-radius: 20%;
+					}
+		   #webname p{width: 3.5em;
+			padding: 3.5%;
+					margin: auto;
+					   border:none;
+					   font-weight:bold;}
+
+	   /***CSS STYLING FOR HEADER NAVIGATION***/				
+	   #menu{float:right;
+		   padding:1%;
+		   padding-top:0.9%;
+		   width:69%;}
+		   #menu table{margin:0;
+				   padding-left:2%;
+				   border:none;
+				   width:100%;
+				   text-align:center;}
+				   
+		   #menu td, tr{color:white;
+					   font-size:0.95em}
+					   
+		   #menu a{color:white;
+					   text-decoration:none;}
+					   
+		   #menu a:hover{color:#132a38;
+					   text-decoration:underline;
+					background-color: whitesmoke;
+				transition-duration: 0.6s;}
+				   
+/*CSS STYLING FOR THE MAIN CONTENT OF THE PAGE*/
+.pic{
+	height: 50%;
+	width: 100%;
+	background-image: url(images/BackgroundHome.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/*display: flex;*/
+}
+.pic h1{
+	margin:0 10% 0 35%;
+	padding-top: 3%;
+	color: white;
+	font-weight: bold;
+	font-family: 'Londrina',serif;
+	text-shadow: 2px 2px 6px #000000;
+}
+.pic p{
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 20px;
+	color:#09273b;
+	text-shadow: 2px 2px 8px #ffffff;
+	text-align: center;
+}
+#content{margin:0;
+	padding:0;}
+
+	#homecontentbg {
+		background-color:#22577a;
+		float: left;
+		width: 73%;
+		margin-right: 1%;
+		margin-top: 2.3%;
+		box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
+		border-radius: 2%;
+	  }
+	  
+	  #homecontent h1 {
+		font-size: 1.1em;
+		padding-left: 4%;
+		margin-top: 0;
+		color: white;
+	  }
+	  
+	  #homecontent p {
+		padding: 0 2% 0 2%;
+	  }
+	  
+	  .accordion {
+		font-size: 1.3em;
+		overflow: hidden;
+		transition: max-height 0.4s ease-out;
+		margin-bottom: 10px;
+		padding-left: 1%;
+		padding-top: 1%;
+	  }
+  
+	  .accordion summary {
+		cursor: pointer;
+	  }
+  
+	  .accordion div {
+		transition:0.4s;
+		border-left:2px double rgb(0, 0, 0);
+		border-top: 1px solid whitesmoke;
+		
+	  }
+  
+	  .accordion[open] div {
+		max-height: 1000px;
+		transition:0.4s;
+	  }
+   #registerbg{background-color:#22577a;
+				border-radius: 5%;
+			   float:right;
+			   width:20%;
+			   margin:2% 2% 2% 1%;
+			   padding:1%;
+			   height:70%;
+			   box-shadow: rgb(214, 206, 206) 1px 2px 4px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;}
+
+   #register{
+		   border:1px solid #f3f3f3ff;
+		   border-radius: 5%;
+		   color:#f3f3f3ff;
+		   margin:0;
+		   font-size:18;
+		   height:98%}
+	   
+	   #regheading{text-align:center;
+				   font-size:1.5em;}
+   
+	   input[type=text]{background-color:#ebe2e0ff;
+					   border:3px #22577a;
+					   border-bottom:2px solid #142746;
+					   border-radius:6px;
+					   width:60%;
+					   text-align:center;
+					   display: block;
+					   margin: 0 auto;}
+   
+	   #register button{background-color:#DBA4A4;
+			   color:black;
+			   border:2px #DBA4A4;
+			   border-radius:5px;
+			   cursor:pointer;
+			   display:block;
+			   margin: 0 auto;
+			   padding-top: 1%;
+			   padding-bottom: 1%;
+			width: 25%;
+		transition-duration: 0.4s;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.8);
+	margin-top: -18px;}
+			   
+	   #register button:hover{background-color:#f3f3f3ff}
+	   
+	   #register span{color:#f3f3f3ff;
+									padding:1%;
+									text-align:center;
+								  margin-left:27%;}
+				   
+	   #labelin {text-align:center;
+					   padding-bottom:5px;
+					   padding-top: -10px;
+						 margin: 0;}
+	   
+   /* CSS STYLING FOR SUB-TOPIC PAGES*/
+   #textbackground{margin:2%;
+   padding:2%;
+   background-color:#f3f3f3ff;
+   }
+
+   /*CSS STYLING FOR (SUBTOPIC:PRIVACY) PAGE*/
+   #text{padding:2%;
+	   border:1px solid #102a3cff;
+	   color:#102a3cff;
+	   margin:0;
+	   font-size:18;
+	   text-align:left;
+	   overflow:hidden}
+	   #text h1{text-align:center;
+			   color:#102a3cff}
+	   #text p{margin:0;
+		   padding:0;
+		   border:none;}
+	   #text a{color:#102a3cff;
+			   text-decoration:underline;}
+	   #text a:hover{background-color:#102a3cff;
+				   color:white;}
+	   
+   #policy {background-color:white;
+   width:96%;
+   padding:2%;
+   text-align:center;
+   height:70%}
+   #policy img{float:center;
+				width:15%;
+				height:20%}
+   #policymargin{border:1px solid black;
+   padding:2%;
+   height:90%;}
+   #policytext{width:50%;
+   float:left;
+   clear:both}
+   #policyvideo{
+   float:right;
+   width:50%;}
+   
+   #importance {background-color:white;
+   width:96%;
+   padding:2%;
+   text-align:center;
+   clear:both}
+   #importance img{float:center;
+				width:10%;
+				height:10%}
+   #importancemargin{border:1px solid black;
+   padding:2%;}
+   #importancemargin td{color:#102a3cff;
+   padding:1%;}
+   #importancemargin td p{
+	font-size: 16px;
+   }
+   .terms{
+	font-size: 18px;
+   }
+   
+   span.heading{font-weight:bold;
+			   font-size:22;
+			   float:left;
+			   color:#22577aff;
+			   }
+			   .p{
+				font-size: 18.4px;
+			   }
+   span.bu{font-weight:bold;
+		   text-decoration:underline}
+
+   #practice{width:100%;
+		   text-align:center;}
+   #practice p{text-align:left}
+   #practice li {
+		   list-style: none;
+		   padding: 10px 30px;
+		   background-image: url(images/bestpractice.png);
+		   background-repeat: no-repeat;
+		   background-position: left center;
+		   background-size: 20px;
+	   }
+   
+   /*CSS STYLING FOR (SUBTOPIC:SOCIAL MEDIA) PAGE*/
+   #evolution{text-align:justify;
+		   font-size:1em;
+		   width:70%;}
+	   
+   /*Styling for the table of contents*/	
+   #tableofcontent{float:right;
+				   width:27%;
+				   font-size:0.8em;
+				   background-color:#22577aff;
+				   color:#f3f3f3}
+				   
+   #thetable{margin:6%;
+		   border:1px solid #f3f3f3;
+		   padding:4%}
+
+   #thetable span{font-weight:bold;}
+   #thetable ol{padding-left:5%;
+			   padding-top:3%;
+			   color:#f3f3f3;
+			   text-align:left;
+			   counter-reset:item;}
+   #thetable li {padding-bottom:1%;
+			   display:block;}
+   #thetable li:before{content: counters(item, ".")". ";
+					   counter-increment:item}
+   #thetable a{color:#f3f3f3;
+			   font-weight:normal}
+
+   #usage{font-size:0.8em;
+	   text-align:justify;}
+   #usage-pic{float:left;}
+		   #usage-pic img{height:45%;
+						   border:1px solid #22577aff }
+   #usage-background{float:left;
+			   margin-left:2%;
+			   margin-bottom:5%;
+			   width:48%;
+			   height:40%;
+			   line-height:1.45em;
+			   background-color:#d7c5c1ff;
+			   padding:1%;}
+
+   #usage-context{background-color:#ebe2e0ff;
+		   float:left;
+		   width:100%;
+		   height:98%;
+		   padding:3%;
+		   padding-top:3%;
+		   margin-left:2%;
+		   margin-top:1%;
+		font-size: 1.2em;}
+		   
+   #advantages{clear:both;
+			   padding-top:5%;}
+			   
+   #advantages-context{width:77%;
+					   font-size:0.8em;
+					   float:left}
+					   #advantages-context ul,li{text-align:justify}
+
+   #advantages-pic{float:left;
+				   width:15%;
+				   margin-left:7.7%;
+				   }
+				   #advantages-pic img {float:left;
+									   margin-right:25%;
+									   padding-left:27%;
+									   margin-bottom:9.5%;
+									   margin-top:9.5%}
+
+   #advantages-pic img.img1{height:15%;
+						   width:40%;
+						padding-bottom: 20%;}
+
+   #advantages-pic img.img2{height:12%;
+						   width:45%;
+						   padding-bottom: 18%;}						 
+						   
+   #advantages-pic img.img3{height:13%;
+						   width:42%;
+						   padding-bottom: 20%;}	
+
+	#advantages-pic img.img4{height:10%;
+							width:40%;
+							padding-bottom: 20%;}	
+
+	#advantages-pic img.img5{height:10%;
+								width:40%;}	
+
+
+
+   #disadvantages{clear:both;
+				   padding-top:5%}
+
+   #headings{font-size:1.4em;
+		   text-align:center;
+		   background-image:url("images/headings.png");
+		   color:#f3f3f3;
+		   background-size:100% 100%;
+		   height:6%;
+		   padding-top:1%;}
+
+   /* CSS STYLING FOR (SUBTOPIC:RISKS & COUNTERMEASURES) PAGE*/
+   #textMain{border:1px solid #102a3cff;}
+   #textMain p{text-align:center;
+		   color:#102a3cff;
+		   font-size:2.1em;
+		   font-weight:bold;
+		   word-spacing:0.05em}
+
+			   hr{width:75%}
+		   
+/* CSS Styling for Risks Div*/	
+#topicRisks{background: url(images/darkBaige.jpg) no-repeat; 
+		   padding:0%; 
+		   background-size:85% 100%; 
+		   height:40%;}
+   #topicRisks p{color:white; 
+			   text-align:left; 
+			   font-size:34; 
+			   padding:2%;}
+
+#textLayout{width:100%; padding:1%;} 
+
+   #textBox1{border-radius: 40px;
+			 background-color: white;
+			 margin:0% 10% 3% 2%;
+			 padding:1% 4%;
+			 width: 190px;
+			 height:330px;
+			 float:left;}
+   #textBox2{border-radius: 40px;
+			 background-color: white;
+			 margin:0% 20% 3% 1%;
+			 padding:1% 4%;
+			 width: 190px;
+			 height:330px;
+			 float:left;}
+			 #textBox3{border-radius: 40px;
+				background-color: white;
+				margin:0% 10% 0% 2%;
+				padding:3% 4%;
+				width: 190px;
+				height:320px;
+				float:left;}
+				#textBox4{border-radius: 40px;
+					background-color: white;
+					margin:0% 1% 0% 1%;
+					padding:3% 4%;
+					width: 190px;
+					height:320px;
+					float:left;}
+
+	   
+	   #textBox1 p{font-size:17; 
+				   color:#ccada7; 
+				   text-align:center;}
+	   #textBox1 span{font-size:17; 
+					   color:#22577a; 
+					   font-weight:bold;}
+					   
+	   #textBox2 p{font-size:17; 
+				   color:#ccada7; 
+				   text-align:center}
+	   #textBox2 span{font-size:17; 
+					   color:#22577a; 
+					   font-weight:bold;}
+					   #textBox3 p{font-size:17; 
+						color:#ccada7; 
+						text-align:center}
+			#textBox3 span{font-size:17; 
+							color:#22577a; 
+							font-weight:bold;}
+							#textBox4 p{font-size:17; 
+								color:#ccada7; 
+								text-align:center}
+					#textBox4 span{font-size:17; 
+									color:#22577a; 
+									font-weight:bold;}
+
+/* CSS Styling for Countermeasures Div*/		
+#topicCountermeasures{clear:both; 
+   width:100%; 
+   height:100%;
+   margin-bottom:30%}
+
+#imgCountermeasures{background: url(images/lightBage.jpg) no-repeat;
+					padding:0%; 
+					background-size:60% 100%; 
+					height:90%;float:left; 
+					width :50%;
+					margin:5% 0% 5% 0%}
+					   #imgCountermeasures img{width:86%; height:60%; margin:25% 0% 7% 6%}
+
+
+#textbox{background: url(images/darkBaige.jpg) no-repeat;
+		   padding:5%; 
+		   background-size:100% 100%; 
+		   border-bottom-left-radius:10%;
+		   border-top-left-radius:10%;
+		   float:right; 
+		   width :40% ;
+		   background-position:right top;
+		   margin-top:15%;
+		   height:100%;
+		   }
+		   
+   #textbox ul{color:white; 
+			   font-size:1.2em;
+			   text-align:left;}
+   #textbox span{color:white;
+				 font-size:2em;
+				 font-weight:bold;
+				 margin-bottom:1%}
+
+
+   /*CSS STYLING FOR MAKING OF PAGE*/
+
+   #first{height:50%;margin-top:3%;
+		   background-image: url("images/ba.jpg") ;
+		   background-repeat: no-repeat;
+		   background-size:83% 55%;
+		   padding:3% 1%}
+
+   #mockTitle{
+
+	   margin:0% 0%;
+	   color:white;
+	   font-size:2.7em;
+	   text-align:center;
+	   font-weight:bold;}
+
+   /*Display images next to each other*/
+	   #imgLayout{width:92%;
+				   margin:4% auto 3% auto;}
+			   #imgLayout td, tr{text-align:center;}			
+			   img.imgMock{margin:1%;
+						   width:84%;
+						   padding:3% 3% 12% 3%;
+						   background-color:white; 
+						   transition: .5s ease;  
+						   opacity: 1;
+						   backface-visibility: hidden;	
+						   border:none}
+						   
+	   /*Image styling*/						  
+		   .imgMockContainer {position: relative;
+							   height:100%;
+						   }		
+			   .imgMockMiddle {transition: .5s ease;
+							   opacity: 0;
+							   position: absolute;
+							   top: 50%;
+							   left: 50%;
+							   transform: translate(-50%, -50%);
+							   -ms-transform: translate(-50%, -50%);
+							   text-align: center;
+							   }
+			   .imgMockContainer:hover .imgMock {opacity: 0.7;
+											   background-color:#22577aff;
+											   }
+
+			   .imgMockContainer:hover .imgMockMiddle {opacity: .9;}
+
+			   .imgMockName {background-color: #22577a;
+						   color:white;
+						   font-size: 16px;
+						   padding: 16px 32px; 
+						   }				  				
+						   
+															   
+   /*Design and Colours div*/
+	   #second{margin-top:5%;}		
+		   #whiteDiv{margin:2% 0 ;
+			   color:#22577a;
+			   height:35%;
+			   width: 80%;
+			   float: left;
+			   background-color:white;
+			   }
+			   #blueDiv{margin:2% 0 ;
+				   height:35%;
+				   width: 10%;
+				   float: left;
+				   background-color:#22577aff;
+			   }#dBlueDiv{margin:2% 0 ;
+				   height:35%;
+				   width: 8%;
+				   float: left;
+				   background-color:#102a3cff;
+			   }#balckDiv{margin:2% 0 ;
+				   height:35%;
+					   width: 2%;
+					   float: left;
+					   background-color:black;
+				   }
+				   
+   /*Content in the white div*/			
+	   #Wleft{margin:2%;width:34%;float:left}	
+			   #Wleft p{margin-bottom:0;
+						   margin-top:9%;
+						   font-size:2em;
+						   text-align:justify;
+						   font-weight:bold;}			
+							   
+					   #line{height: 1px;
+							   background-color: #22577a;
+							   border: none;
+							   width:5%;float:left}	
+									   
+						   #colorP{clear:both;
+								   float:left;
+								   width:28em;
+								   border:1px solid black;}				
+						   
+						   #Wright{margin:0;width:61%;float:left}
+						   #Wright p{margin:1%;				
+									   font-size:1.17em;
+									   text-align:justify;
+								   }							
+
+   /*Maintainability div*/
+	   #maintainability{width:100%;margin:1% 0 ; padding:0}	
+		   
+		   #balckDiv2{margin:0 0 2%;
+					   height:60%;
+					   width: 10%;
+					   float: left;
+					   background-color:black;}				
+				   
+		   #dBlueDiv2{margin:0 0 2%;
+					   height:60%;
+					   width: 20%;
+					   float: left;
+					   background-color:#102a3cff;}
+								   
+		   #blueDiv2{margin:0 0 2%;
+					   height:60%;
+					   width: 70%;
+					   float: left;
+					   background-color:#22577aff;}
+				   
+			   #div2Content{width:85%;padding:3%;color:white;}
+			   
+			   #div2Content span{
+							   font-size:2em;
+							   text-align:justify;
+							   font-weight:bold;}	
+							   
+				   #div2Content hr{height: 1px;
+								   background-color: white;
+								   border: none;
+								   width:5%;
+								   float:left;}
+								   
+				   #div2Content p{
+							   font-size:1.17em;
+							   text-align:justify;
+							   }
+
+				   #div2List{float:left;width:40%;padding:0 2%}
+								   #div2List ul{font-size:1.1em;
+													   text-align:justify;
+													   list-style-type: square;}
+													   
+								   #div2List li{padding-bottom:5%}
+
+
+   /*our story*/	
+   #ourStory{
+	background-image: url("images/ba.jpg") ;
+		   background-repeat: no-repeat;
+   }							
+   #ourTitle{color:#22577a;
+		   font-size:2.7em;
+		   text-align:center;
+		   font-weight:bold;
+		   margin:2% 2%;
+		}
+		   
+		   #balckDiv3{margin:0 0 2%;
+					   height:85%;
+					   width: 8%;
+					   float: left;
+					   background-color:black;}				
+				   
+		   #dBlueDiv3{margin:0 0 2%;
+					   height:85%;
+					   width: 17%;
+					   float: left;
+					   background-color:#102a3cff;}
+								   
+		   #blueDiv3{margin:0 0 2%;
+					   height:85%;
+					   width: 75%;
+					   float: left;
+					   background-color:#22577aff;}
+				   
+			   #div3Content{width:85%;
+						   padding:3%;
+						   color:white;
+						   text-align:justify;}
+			   
+			   #div3Content span{
+							   font-size:2em;
+							   font-weight:bold;}	
+
+								   
+				   #div3Content p{
+							   font-size:1.17em;
+							   text-align:justify;
+							   }
+							   
+#midDiv{clear:both;width:100% ;height:85%}
+
+#Challenges{width:40%;float:left;
+		   height:100%;
+		   background: url(images/white.jpg) no-repeat;
+		   background-size:80% 100%;
+		   background-position:top right;
+		   color:#22577a;
+		   text-align:justify;
+		   padding:2% 0 0 5%}
+		   #Challenges span{font-size:2em;
+						   font-weight:bold;
+						   }
+		   #Challenges p{font-size:1.17em;
+						   width:80%;
+						   }					
+#learn{width:44%;
+	   height:100%;
+	   float:left;
+	   background-color:#102a3cff;
+	   margin:0 3%	;
+	   color:white;
+	   text-align:justify;
+	   padding:5% 2.5% 0;
+	   
+	   }
+	   #learn span{font-size:2em;padding:0 5% ;
+					   font-weight:bold;
+
+					   }
+	   #learn p{font-size:1.17em;
+				   padding:0 7%;}		
+					   
+	   #whiteDiv4{margin:2% 0 ;
+		   color:#22577a;
+		   height:95%;
+		   width: 85%;
+		   float: left;
+		   background-color:white;
+				   text-align:justify;
+		   }
+	   #devloper {width:50%;float:left;padding:2%}
+	   
+	   #devloper span{font-size:2em;
+				   font-weight:bold;
+				   }
+	   #devloper p{font-size:1.17em;}
+	   
+	   #ref{width:40%; float:right;padding:2%}
+	   #ref span{font-size:2em;
+				   font-weight:bold;
+				   }
+	   #ref ul{font-size:1.1em;
+			   text-align:justify;
+			   list-style-type: square;}
+	   #ref li{padding-bottom:5%}
+	   
+		   #blueDiv4{margin:2% 0 ;
+			   height:95%;
+			   width: 8%;
+			   float: left;
+			   background-color:#22577aff;
+		   }#dBlueDiv4{margin:2% 0 ;
+			   height:95%;
+			   width: 6%;
+			   float: left;
+			   background-color:#102a3cff;
+		   }#balckDiv4{margin:2% 0 ;
+			   height:95%;
+				   width: 1%;
+				   float: left;
+				   background-color:black;
+			   }
+											   
+/*CSS STYLING FOR THE FOOTER OF THE PAGE*/
+#footer{color:white;
+background-color:#102a3cff;}
+
+	   #footerlink{background-color:#102a3cff;
+				   width:100%;
+					 padding:0%;
+					 margin-top: 1.2%;
+					 padding-top:0.7%;
+					 padding-bottom:0.5%;
+					 float:left;
+					 font-size:1.1em;
+					 text-align:center}
+					 
+	   img.contact{width:12%;
+				   height:12%}

@@ -1,0 +1,183 @@
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="header"> <!--header-->
+	
+		<div id="webname">
+			<img src="images/logo.png">
+			<p>GuardingYourFeed</p>
+		</div>
+		<div id="menu"> 
+			<table>
+			<tr>
+				<td><a href="Home.html">HOME</a></td>
+				<td>|</td>
+				<td><a href="SocialMedia.html">SOCIAL MEDIA</a></td>
+				<td>|</td>
+				<td><a href="Privacy.html">PRIVACY</a></td>
+				<td>|</td>
+				<td><a href="Risks.html">RISKS & COUNTERMEASURES</a></td>
+				<td>|</td>
+				<td><a href="MakingOf.html">MAKING OF GUARDINGYOURFEED</a></td>
+				<td>|</td>
+				<td><a href="OurStory.html">OUR STORY</a></td>
+			</tr>
+			</table>
+		</div>
+		
+	</div> <!-- end of header-->
+	<div id="content"> 
+		<!--content div-->
+		<div class="pic">
+			
+			<h1>Social Media & Privacy</h1>
+			<p>Welcome to GuardingYourFeed! We're here to explore the history of social media, privacy, and ways to stay secure in the digital age. Our site covers three main areas:<b> Social Media, Privacy, and Risks & Countermeasures.</b> Check out the detailed discussions on each page. </p>
+		
+		</div>
+			<div id="registerbg"> <!-- right box-->
+			
+				<div id="register">
+					
+					<p id="regheading"> REGISTER YOUR INTEREST</p>
+					<p id="labelin">First Name: </p>
+					<input type="text" id="firstinput" placeholder="Enter First Name" required>
+					
+					<br>
+					
+					<p id="labelin">Last Name:</p>        
+					<input type="text" id="lastinput" placeholder="Enter Last Name" required>
+					
+					<br>
+
+					<p id="labelin">Mobile No:</p>
+					<input type="text" id="mobno" placeholder="Enter Mobile Number" required>
+
+					<br>
+					
+					<p id="labelin">E-Mail:</p>
+					<input type="text" id="emailinput" placeholder="Enter E-mail account" required>
+					
+					<br><br>
+					
+					<button type="submit" onclick="checkUser()">Submit</button>
+					
+					<br>
+					
+					<span id="response"></span>
+					
+				</div>
+			
+			
+			</div> <!--end of right box-->
+			<div id="homecontentbg">
+				<!-- START OF left side -->
+				<div id="homecontent">
+				  <details class="accordion">
+					<summary><h1> Social Media </h1></summary>
+					<div>
+					  <p>Social media's rapid growth has connected the world, offering opportunities for success but also increasing the risk of exploitation. As its popularity rises, so does the importance of protecting oneself from potential dangers.</p>
+					</div>
+				  </details>
+				  <details class="accordion">
+					<summary><h1> Privacy </h1></summary>
+					<div>
+					  <p>Modern websites and services employ multiple methods to protect users from online threats. Privacy measures extend from user actions to hosting practices. Avoiding sharing personal information with strangers online is just one way to enhance protection, with more strategies outlined in the website's privacy section. </p>
+					</div>
+				  </details>
+				  <details class="accordion">
+					<summary><h1> Risks & Countermeasures </h1></summary>
+					<div>
+					  <p>In light of the increasing online risks, it's essential for individuals to proactively protect themselves and stay informed. Being unaware can make one susceptible to manipulation by hackers and scammers. Implementing discussed privacy measures is key to thwarting potential attacks and ensuring online safety. Prioritizing protection is crucial, given the severe consequences of personal information leaks.</p>
+					</div>
+				  </details>
+				</div>
+			  </div>
+			  <!-- end of left side -->
+			  
+	</div> <!--end of content div-->
+
+
+	<div id="footer"><!-- footer-->
+		<table id="footerlink">
+			<tr>
+				<td>CONTACT INFO</td>
+				<td><a href="#"><img class="contact" src="images/phone.png" alt="Phone Symbol"></a></td>
+				<td><a href="#"><img class="contact" src="images/Picture8.png" alt="Email Symbol"></a></td>
+				<td><a href="#"><img class="contact" src="images/linkdin.png" alt="LinkIn Logo"></a></td>
+				<td><a href="#"><img class="contact" src="images/insta.png" alt="Instagram Logo"></a></td>
+				<td><a href="#"><img class="contact" src="images/twitter.png" alt="Twitter Logo"></a></td>
+			</tr>
+		</table>
+	</div> <!-- end of footer-->
+	<script type="text/JavaScript">function checkUser() {
+		var firstName = document.getElementById("firstinput").value;
+		var lastName = document.getElementById("lastinput").value;
+		var mobileNo = document.getElementById("mobno").value;
+		var email = document.getElementById("emailinput").value;
+	
+		if (firstName.length < 3) {
+			displayErrorMessage("First Name should have at least 3 characters!");
+		} else if (lastName.length < 3) {
+			displayErrorMessage("Last Name should have at least 3 characters!");
+		} else if (!/^\d{8}$/.test(mobileNo)) {
+			displayErrorMessage("Mobile No must contain exact 8 digits!");
+		} else if (email === "") {
+			displayErrorMessage("Please enter your E-Mail!");
+		} else {
+			// Save data to localStorage
+			localStorage.setItem("lFName", firstName);
+			localStorage.setItem("lLName", lastName);
+			localStorage.setItem("MobNum", mobileNo);
+			localStorage.setItem("lEmail", email);
+	
+			// Display success message
+			displaySuccessMessage("Information added successfully!");
+	
+			// Clear input fields
+			clearInputFields();
+		}
+	}
+	
+	function displayErrorMessage(message) {
+		alert("Error: " + message);
+	}
+	
+	function displaySuccessMessage(message) {
+		alert("Success: " + message);
+	}
+	
+	function clearInputFields() {
+		document.getElementById("firstinput").value = "";
+		document.getElementById("lastinput").value = "";
+		document.getElementById("mobno").value = "";
+		document.getElementById("emailinput").value = "";
+	}
+	
+	 // Function to display user's first name on all pages
+	 function displayUserName() {
+    var firstName = localStorage.getItem("lFName");
+    if (firstName) {
+      document.getElementById("userName").innerText = "Welcome, " + firstName + "!";
+    }
+  }
+
+  // Call displayUserName function on page load
+  displayUserName();
+
+  function clearInputFields() {
+    document.getElementById("firstinput").value = "";
+    document.getElementById("lastinput").value = "";
+    document.getElementById("mobno").value = "";
+    document.getElementById("emailinput").value = "";
+  }
+	</script>
+</body>
+</html>

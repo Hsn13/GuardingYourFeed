@@ -1,0 +1,176 @@
+<html>
+<head>
+	<title>Privacy</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="header">
+	
+		<div id="webname">
+			<img src="images/logo.png">
+			<p>GuardingYourFeed</p>
+		</div>
+		<div id="menu">
+			<table>
+			<tr>
+				<td><a href="Home.html">HOME</a></td>
+				<td>|</td>
+				<td><a href="SocialMedia.html">SOCIAL MEDIA</a></td>
+				<td>|</td>
+				<td><a href="Privacy.html">PRIVACY</a></td>
+				<td>|</td>
+				<td><a href="Risks.html">RISKS & COUNTERMEASURES</a></td>
+				<td>|</td>
+				<td><a href="MakingOf.html">MAKING OF GUARDINGYOURFEED</a></td>
+				<td>|</td>
+				<td><a href="OurStory.html">OUR STORY</a></td>
+			</tr>
+			</table>
+		</div>
+		
+	</div>
+	
+	<div id="content">
+		<div id="userName"></div>
+		<div id="textbackground">
+			<div id="text">
+			<h1>Privacy</h1>
+			<hr>
+				<div id="policy">
+					<div id="policymargin">
+					<span class="heading">Privacy Policy</span>
+						<div id="policytext">
+							<img src="images/policy.png" alt="privacy symbol"><br><br><br>
+							<p>Our entire online activity is monitored and saved in a database somewhere; every click, search, or double tap is documented and eventually related back to you. A lot of people are not aware of the technological complexity of information privacy. Which is why a platform is required by law to publish their 
+							<a href="https://www.privacypolicies.com/blog/privacy-policy-template/#What_Is_A_Privacy_Policy">Privacy Policies</a>
+							on their websites and inform the client how his/her data is being collected, handled, and processed.</p>
+						</div>
+						<div id="policyvideo">
+							<iframe width="420" height="315" src="https://www.youtube.com/embed/p3SXF-rRcro">
+							</iframe>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div id="importance">
+					<div id="importancemargin">
+					<span class="heading">Importance of Privacy Policies</span>
+					<br><br>
+					<table>
+					<tr>
+						<td class="terms">In terms of <span class="bu">business</span>, </td>
+						<td class="terms">In terms of <span class="bu">client</span>,</td>
+					</tr>
+					<tr>
+						<td><img src="images/business.png" alt="a group of people"></td>
+						<td><img src="images/customer.png" alt="one woman"></td>
+					</tr>
+					<tr>
+						<td><p>Companies absolutely must include a privacy policy on the website, and/or platform as it is required by law. This not only shows what data is collected and how it is processed, but it induces a feeling of trust and assurance for your clients knowing how their data is being managed. Plus, when your customer's data is protected, your organization is also protected. In other words, you protect your reputation and yourself from disastrous lawsuits by protecting customer privacy.</p></td>
+						<td><p>Companies use lawyers to ensure that their privacy policy is in accordance with all applicable state and federal regulations. However, the excessive use of
+					<a href ="https://www.merriam-webster.com/dictionary/jargon">jargon language</a>
+					confuses the reader and leaves no choice but to ignore and skip the reading. The habit of agreeing to Terms & Conditions without actually reading might give a business the right to access data and handle them as pleased. It is important to read and understand the content of a privacy policy before agreeing on any terms or starting an account.
+							</p></td>
+					</tr>
+					</table>
+					</div>
+				</div>
+				<br>
+			<div id="headings">Best Practice</div>
+				<div id="practice">
+				<br><br>
+					<p>Despite all laws and regulations that protect the physical or digital right to privacy, its common that	issues arise due to user’s activity and behavior. For instance, a user must not share critical private information like location or credit card information, as the platform is not responsible for any negative outcomes that might be caused for sharing such information. Social Media users must raise their awareness to what information they should and shouldn’t share online as it can potentially be used to access/damage your account and/or information. Hence, here is a list of practices to follow when using social media</p>
+					<ul>
+					<li> Read and understand privacy policies before accepting</li>
+					<li>	Don’t Post anything you will regret later on. And remember: ONCE POSTED, ALWAYS POSTED</li>
+					<li>	Maintain a positive harmless online presence</li>
+					<li>	Don’t post sensitive information</li>
+					<li>	Protect your device with Antivirus and regular updates</li>
+					<li>	Block and Report accounts/threats that you run into</li>
+					<li>	Know when to take further action with the law or police</li>
+					<li>	Use strong <a href=" https://reciprocity.com/resources/what-are-the-3-types-of-internal-controls/">Preventive, Detective, and Corrective controls</a> to protect your account</li>
+					<li>	Raise your awareness on phishing, hacking, blackmail, and other exploitation methods</li>
+				</ul>
+				
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div id="footer">
+		<table id="footerlink">
+			<tr>
+				<td>CONTACT INFO</td>
+				<td><a href="#"><img class="contact" src="images/phone.png" alt="Phone Symbol"></a></td>
+				<td><a href="#"><img class="contact" src="images/Picture8.png" alt="Email Symbol"></a></td>
+				<td><a href="#"><img class="contact" src="images/linkdin.png" alt="LinkIn Logo"></a></td>
+				<td><a href="#"><img class="contact" src="images/insta.png" alt="Instagram Logo"></a></td>
+				<td><a href="#"><img class="contact" src="images/twitter.png" alt="Twitter Logo"></a></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/JavaScript">function checkUser() {
+		var firstName = document.getElementById("firstinput").value;
+		var lastName = document.getElementById("lastinput").value;
+		var mobileNo = document.getElementById("mobno").value;
+		var email = document.getElementById("emailinput").value;
+	
+		if (firstName.length < 3) {
+			displayErrorMessage("First Name should have at least 3 characters!");
+		} else if (lastName.length < 3) {
+			displayErrorMessage("Last Name should have at least 3 characters!");
+		} else if (!/^\d{8}$/.test(mobileNo)) {
+			displayErrorMessage("Mobile No must contain exact 8 digits!");
+		} else if (email === "") {
+			displayErrorMessage("Please enter your E-Mail!");
+		} else {
+			// Save data to localStorage
+			localStorage.setItem("lFName", firstName);
+			localStorage.setItem("lLName", lastName);
+			localStorage.setItem("MobNum", mobileNo);
+			localStorage.setItem("lEmail", email);
+	
+			// Display success message
+			displaySuccessMessage("Information added successfully!");
+	
+			// Clear input fields
+			clearInputFields();
+		}
+	}
+	
+	function displayErrorMessage(message) {
+		alert("Error: " + message);
+	}
+	
+	function displaySuccessMessage(message) {
+		alert("Success: " + message);
+	}
+	
+	function clearInputFields() {
+		document.getElementById("firstinput").value = "";
+		document.getElementById("lastinput").value = "";
+		document.getElementById("mobno").value = "";
+		document.getElementById("emailinput").value = "";
+	}
+	
+	 // Function to display user's first name on all pages
+	 function displayUserName() {
+    var firstName = localStorage.getItem("lFName");
+    if (firstName) {
+      document.getElementById("userName").innerText = "Welcome, " + firstName + "!";
+    }
+  }
+
+  // Call displayUserName function on page load
+  displayUserName();
+
+  function clearInputFields() {
+    document.getElementById("firstinput").value = "";
+    document.getElementById("lastinput").value = "";
+    document.getElementById("mobno").value = "";
+    document.getElementById("emailinput").value = "";
+  }
+	</script>
+</body>
+</html>
